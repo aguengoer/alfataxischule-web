@@ -1,0 +1,8 @@
+# Robots.txt for ALFA Taxischule
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://alfataxischule.at/sitemap.xml
