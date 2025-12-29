@@ -23,11 +23,13 @@ export function HeroSection({ title, subtitle, ctaText }: HeroSectionProps) {
       </div>
 
       {/* Content */}
-      <div className="container relative z-10 py-32 text-center">
-        <h1 className="text-5xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl text-balance mb-6">
+      <div className="container relative z-10 py-24 sm:py-32 lg:py-40 text-center">
+        <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-white lg:text-7xl text-balance mb-6 px-4">
           {title}
         </h1>
-        <p className="mx-auto max-w-2xl text-xl text-white/90 sm:text-2xl text-balance mb-10">{subtitle}</p>
+        <p className="mx-auto max-w-2xl text-lg sm:text-xl text-white/90 lg:text-2xl text-balance mb-10 px-4">
+          {subtitle}
+        </p>
         <Button asChild size="lg" className="text-lg px-8 py-6 h-auto">
           <Link href="/kurse">
             {ctaText}

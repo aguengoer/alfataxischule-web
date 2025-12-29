@@ -10,13 +10,7 @@ export function Footer() {
           {/* Logo & Description */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-3">
-              <Image
-                src="/images/logo.svg"
-                alt="ALFA Taxischule Logo"
-                width={40}
-                height={40}
-                className="h-10 w-auto brightness-0 invert"
-              />
+              <Image src="/images/logo.svg" alt="ALFA Taxischule Logo" width={50} height={50} className="h-12 w-auto" />
               <span className="text-lg font-bold">ALFA Taxischule</span>
             </Link>
             <p className="text-sm text-secondary-foreground/80">
@@ -91,8 +85,13 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-secondary-foreground/20 text-center text-sm text-secondary-foreground/80">
-          <p>&copy; {new Date().getFullYear()} ALFA Taxischule. Alle Rechte vorbehalten.</p>
+        <div className="mt-12 pt-8 border-t border-secondary-foreground/20">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-secondary-foreground/80">
+            <p>&copy; {new Date().getFullYear()} ALFA Taxischule. Alle Rechte vorbehalten.</p>
+            <Link href="/impressum" className="hover:text-primary transition-colors underline-offset-4 hover:underline">
+              Impressum
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
