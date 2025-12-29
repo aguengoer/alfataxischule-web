@@ -33,9 +33,9 @@ Moderne Website für ALFA Taxischule Wien - Professionelle Taxilenker-Ausbildung
 
 1. Repository klonen
 2. Dependencies installieren:
-   ```bash
+   \`\`\`bash
    npm install
-   ```
+   \`\`\`
 
 3. Umgebungsvariablen einrichten (bereits in Vercel konfiguriert):
    - `NEXT_PUBLIC_SUPABASE_URL`
@@ -43,9 +43,9 @@ Moderne Website für ALFA Taxischule Wien - Professionelle Taxilenker-Ausbildung
    - Weitere Supabase-Variablen
 
 4. Entwicklungsserver starten:
-   ```bash
+   \`\`\`bash
    npm run dev
-   ```
+   \`\`\`
 
 5. Öffnen Sie [http://localhost:3000](http://localhost:3000)
 
@@ -79,9 +79,9 @@ Der Admin-Bereich bietet ein vollständiges CMS für:
 
 Das Projekt ist für Vercel optimiert und kann mit einem Klick deployed werden:
 
-```bash
+\`\`\`bash
 npm run build
-```
+\`\`\`
 
 ## Content-Management
 

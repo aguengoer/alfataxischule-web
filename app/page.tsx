@@ -6,6 +6,7 @@ import { UpcomingCourses } from "@/components/upcoming-courses"
 import { createClient } from "@/lib/supabase/server"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { GraduationCap } from "lucide-react"
 
 export default async function HomePage() {
   const supabase = await createClient()
@@ -114,6 +115,28 @@ export default async function HomePage() {
               {content.introText ||
                 "Bei ALFA Taxischule bieten wir Ihnen eine hochwertige Ausbildung zum Taxilenker in Wien. Mit erfahrenen Kursleitern, modernen Lehrmethoden und einer persönlichen Betreuung bereiten wir Sie optimal auf die Prüfung vor."}
             </p>
+          </div>
+        </section>
+
+        {/* Learning App Section */}
+        <section className="w-full py-20 bg-primary/5">
+          <div className="container">
+            <div className="max-w-4xl mx-auto bg-card border rounded-lg p-8 md:p-12 text-center shadow-sm">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-6">
+                <GraduationCap className="w-8 h-8 text-primary" />
+              </div>
+              <h2 className="text-3xl font-bold mb-4">Online Lern-App</h2>
+              <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+                Bereiten Sie sich optimal auf Ihre Taxilenker-Prüfung vor! Unsere interaktive Lern-App bietet Ihnen
+                Zugang zu allen wichtigen Prüfungsfragen, Übungen und Lernmaterialien - jederzeit und überall.
+              </p>
+              <Button asChild size="lg" className="text-lg px-8">
+                <a href="https://app.alfataxischule.at/" target="_blank" rel="noopener noreferrer">
+                  <GraduationCap className="mr-2 h-5 w-5" />
+                  Zur Lern-App
+                </a>
+              </Button>
+            </div>
           </div>
         </section>
 

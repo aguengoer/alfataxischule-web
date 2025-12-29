@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Phone, Menu } from "lucide-react"
+import { Phone, Menu, GraduationCap } from "lucide-react"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
 export function Header() {
@@ -35,6 +35,17 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-4">
+          <Button
+            asChild
+            variant="outline"
+            className="hidden lg:flex border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
+          >
+            <a href="https://app.alfataxischule.at/" target="_blank" rel="noopener noreferrer">
+              <GraduationCap className="mr-2 h-4 w-4" />
+              Lern-App
+            </a>
+          </Button>
+
           <Button asChild className="hidden md:flex">
             <Link href="/kontakt">
               <Phone className="mr-2 h-4 w-4" />
@@ -61,6 +72,15 @@ export function Header() {
                     {link.label}
                   </Link>
                 ))}
+                <a
+                  href="https://app.alfataxischule.at/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg font-medium text-primary hover:text-primary/80 transition-colors flex items-center gap-2"
+                >
+                  <GraduationCap className="h-5 w-5" />
+                  Lern-App
+                </a>
               </nav>
             </SheetContent>
           </Sheet>
