@@ -2,7 +2,7 @@
 -- Seed initial CMS content for homepage
 INSERT INTO public.page_content (page_key, content) VALUES
 ('homepage', '{
-  "heroHeadline": "Ihre Taxischule in Wien",
+  "heroHeadline": "Alfa Taxischule in Wien",
   "heroSubtitle": "Professionelle Ausbildung für angehende Taxilenker mit modernen Lehrmethoden und persönlicher Betreuung",
   "heroCTA": "Jetzt anmelden",
   "introHeading": "Willkommen bei ALFA Taxischule",
@@ -26,7 +26,7 @@ INSERT INTO public.page_content (page_key, content) VALUES
   "pageIntro": "Der Weg zum Taxilenker in Wien erfordert mehrere Schritte. Hier finden Sie eine übersichtliche Anleitung.",
   "steps": [
     {
-      "title": "Voraussetzungen prüfen",
+      "title": "Voraussetzung (keine Prüfung)",
       "description": "Sie benötigen: Mindestalter 20 Jahre, Führerschein Klasse B mit mindestens 1 Jahr Fahrpraxis, polizeiliches Führungszeugnis, ärztliches Gutachten, Erste-Hilfe-Kurs."
     },
     {
@@ -38,11 +38,11 @@ INSERT INTO public.page_content (page_key, content) VALUES
       "description": "Nach dem Kurs legen Sie die Prüfung bei der Wirtschaftskammer Wien ab. Die Prüfung besteht aus einem theoretischen und praktischen Teil."
     },
     {
-      "title": "Gewerbelizenz beantragen",
-      "description": "Mit bestandener Prüfung können Sie die Gewerbelizenz bei der Magistratsabteilung beantragen."
+      "title": "Taxilenker Ausweis beantragen",
+      "description": "Mit bestandener Prüfung können Sie den Taxilenker Ausweis bei der Magistratsabteilung beantragen."
     }
   ],
-  "wkoLink": "https://www.wko.at",
+  "wkoLink": "https://www.wko.at/wien/transport-verkehr/befoerderungsgewerbe-personenkraftwagen/uebersicht-taxilenker-pruefungen",
   "magistratLink": "https://www.wien.gv.at"
 }'::jsonb)
 ON CONFLICT (page_key) DO UPDATE SET content = EXCLUDED.content;
