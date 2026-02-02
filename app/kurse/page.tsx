@@ -182,7 +182,7 @@ export default async function KursePage() {
                   <tr className="border-b">
                     <td className="px-6 py-4">Gewerbekurs</td>
                     <td className="px-6 py-4">16:30 - 20:30 Uhr</td>
-                    <td className="px-6 py-4 font-semibold">€ 150,00</td>
+                    <td className="px-6 py-4 font-semibold">€ 500,00</td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 text-sm text-muted-foreground" colSpan={3}>
