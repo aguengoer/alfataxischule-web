@@ -163,7 +163,7 @@ export default async function KursePage() {
         {/* Pricing Table */}
         <section className="w-full py-16 bg-muted/30">
           <div className="container max-w-4xl">
-            <h2 className="text-3xl font-bold mb-8 text-center">Kursübersicht & Preise</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">Kursübersicht</h2>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse bg-card rounded-lg overflow-hidden shadow-sm">
                 <thead>
@@ -171,7 +171,6 @@ export default async function KursePage() {
                     <th className="px-6 py-4 text-left font-semibold">Kurstyp</th>
                     <th className="px-6 py-4 text-left font-semibold">Datum</th>
                     <th className="px-6 py-4 text-left font-semibold">Zeiten</th>
-                    <th className="px-6 py-4 text-left font-semibold">Preis</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -194,16 +193,14 @@ export default async function KursePage() {
                       </ul>
                     </td>
                     <td className="px-6 py-4 align-top">16:30 – 20:30 Uhr</td>
-                    <td className="px-6 py-4 align-top font-semibold">€ 120,00</td>
                   </tr>
                   <tr className="border-b">
                     <td className="px-6 py-4">Gewerbekurs</td>
-                    <td className="px-6 py-4">–</td>
+                    <td className="px-6 py-4">16., 17., 18., 19., 20., 23., 24., 25. Februar</td>
                     <td className="px-6 py-4">16:30 – 20:30 Uhr</td>
-                    <td className="px-6 py-4 font-semibold">€ 500,00</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-muted-foreground" colSpan={4}>
+                    <td className="px-6 py-4 text-sm text-muted-foreground" colSpan={3}>
                       Persönliche Anmeldung während der Öffnungszeiten möglich: Mo-Fr 11:00-16:00 Uhr
                     </td>
                   </tr>
