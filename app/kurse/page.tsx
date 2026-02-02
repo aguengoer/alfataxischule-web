@@ -176,22 +176,25 @@ export default async function KursePage() {
                 </thead>
                 <tbody>
                   <tr className="border-b">
-                    <td className="px-6 py-4">Taxilenkerkurs</td>
-                    <td className="px-6 py-4">09.02. – 12.02.</td>
-                    <td className="px-6 py-4">16:30 – 20:30 Uhr</td>
-                    <td className="px-6 py-4 font-semibold">€ 120,00</td>
-                  </tr>
-                  <tr className="border-b">
-                    <td className="px-6 py-4">Taxilenkerkurs</td>
-                    <td className="px-6 py-4">02.03. – 05.03.</td>
-                    <td className="px-6 py-4">16:30 – 20:30 Uhr</td>
-                    <td className="px-6 py-4 font-semibold">€ 120,00</td>
-                  </tr>
-                  <tr className="border-b">
-                    <td className="px-6 py-4">Taxilenkerkurs</td>
-                    <td className="px-6 py-4">23.03. – 26.03.</td>
-                    <td className="px-6 py-4">16:30 – 20:30 Uhr</td>
-                    <td className="px-6 py-4 font-semibold">€ 120,00</td>
+                    <td className="px-6 py-4 align-top">Taxilenkerkurs</td>
+                    <td className="px-6 py-4 align-top">
+                      <ul className="space-y-1.5">
+                        <li className="flex items-center gap-2">
+                          <span className="size-1.5 rounded-full bg-primary shrink-0" aria-hidden />
+                          09.02. – 12.02.
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="size-1.5 rounded-full bg-primary shrink-0" aria-hidden />
+                          02.03. – 05.03.
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="size-1.5 rounded-full bg-primary shrink-0" aria-hidden />
+                          23.03. – 26.03.
+                        </li>
+                      </ul>
+                    </td>
+                    <td className="px-6 py-4 align-top">16:30 – 20:30 Uhr</td>
+                    <td className="px-6 py-4 align-top font-semibold">€ 120,00</td>
                   </tr>
                   <tr className="border-b">
                     <td className="px-6 py-4">Gewerbekurs</td>
@@ -200,7 +203,7 @@ export default async function KursePage() {
                     <td className="px-6 py-4 font-semibold">€ 500,00</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-muted-foreground" colSpan={3}>
+                    <td className="px-6 py-4 text-sm text-muted-foreground" colSpan={4}>
                       Persönliche Anmeldung während der Öffnungszeiten möglich: Mo-Fr 11:00-16:00 Uhr
                     </td>
                   </tr>
