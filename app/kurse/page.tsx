@@ -169,6 +169,7 @@ export default async function KursePage() {
                 <thead>
                   <tr className="bg-secondary text-secondary-foreground">
                     <th className="px-6 py-4 text-left font-semibold">Kurstyp</th>
+                    <th className="px-6 py-4 text-left font-semibold">Datum</th>
                     <th className="px-6 py-4 text-left font-semibold">Zeiten</th>
                     <th className="px-6 py-4 text-left font-semibold">Preis</th>
                   </tr>
@@ -176,12 +177,26 @@ export default async function KursePage() {
                 <tbody>
                   <tr className="border-b">
                     <td className="px-6 py-4">Taxilenkerkurs</td>
-                    <td className="px-6 py-4">16:30 - 20:30 Uhr</td>
+                    <td className="px-6 py-4">09.02. – 12.02.</td>
+                    <td className="px-6 py-4">16:30 – 20:30 Uhr</td>
+                    <td className="px-6 py-4 font-semibold">€ 120,00</td>
+                  </tr>
+                  <tr className="border-b">
+                    <td className="px-6 py-4">Taxilenkerkurs</td>
+                    <td className="px-6 py-4">02.03. – 05.03.</td>
+                    <td className="px-6 py-4">16:30 – 20:30 Uhr</td>
+                    <td className="px-6 py-4 font-semibold">€ 120,00</td>
+                  </tr>
+                  <tr className="border-b">
+                    <td className="px-6 py-4">Taxilenkerkurs</td>
+                    <td className="px-6 py-4">23.03. – 26.03.</td>
+                    <td className="px-6 py-4">16:30 – 20:30 Uhr</td>
                     <td className="px-6 py-4 font-semibold">€ 120,00</td>
                   </tr>
                   <tr className="border-b">
                     <td className="px-6 py-4">Gewerbekurs</td>
-                    <td className="px-6 py-4">16:30 - 20:30 Uhr</td>
+                    <td className="px-6 py-4">–</td>
+                    <td className="px-6 py-4">16:30 – 20:30 Uhr</td>
                     <td className="px-6 py-4 font-semibold">€ 500,00</td>
                   </tr>
                   <tr>
