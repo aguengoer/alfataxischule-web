@@ -4,7 +4,8 @@ import { AdminNav } from "@/components/admin-nav"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { CourseForm } from "@/components/admin/course-form"
 
-export default async function EditCoursePage({ params }: { params: { id: string } }) {
+export default async function EditCoursePage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
   const supabase = await createClient()
 
   const {
@@ -15,7 +16,7 @@ export default async function EditCoursePage({ params }: { params: { id: string 
     redirect("/admin/login")
   }
 
-  const { data: course } = await supabase.from("courses").select("*").eq("id", params.id).single()
+  const { data: course } = await supabase.from("courses").select("*").eq("id", id).single()
 
   if (!course) {
     notFound()
